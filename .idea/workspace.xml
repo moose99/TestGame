@@ -26,7 +26,7 @@
       <file leaf-file-name="Main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="30" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1649">
+            <state line="74" column="23" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1751">
               <folding>
                 <element signature="e#69#87#0" expanded="true" />
               </folding>
@@ -43,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ship.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ship.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ship.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="989" selection-end="989" vertical-scroll-proportion="-1.4375" vertical-offset="1394" max-vertical-offset="1938">
+            <state line="89" column="22" selection-start="2621" selection-end="2621" vertical-scroll-proportion="-22.884615" vertical-offset="918" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="background.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="background.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/background.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="18" column="9" selection-start="554" selection-end="554" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
         <option value="$PROJECT_DIR$/asteroid.py" />
         <option value="$PROJECT_DIR$/space.py" />
         <option value="$PROJECT_DIR$/SpaceWar.py" />
+        <option value="$PROJECT_DIR$/background.py" />
         <option value="$PROJECT_DIR$/bullet.py" />
         <option value="$PROJECT_DIR$/ship.py" />
         <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/background.py" />
       </list>
     </option>
   </component>
@@ -416,9 +416,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ship.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="22" selection-start="2621" selection-end="2621" vertical-scroll-proportion="-22.884615" vertical-offset="918" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="30" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1649">
+        <state line="74" column="23" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1751">
           <folding>
             <element signature="e#69#87#0" expanded="true" />
           </folding>
@@ -427,14 +434,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/background.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ship.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="989" selection-end="989" vertical-scroll-proportion="-1.4375" vertical-offset="1394" max-vertical-offset="1938">
+        <state line="18" column="9" selection-start="554" selection-end="554" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>

@@ -34,7 +34,7 @@ def FireBullet(game, x, y, rotation):
     bulletRect.insert(0, rect)
     bulletDirX.insert(0, dirX)
     bulletDirY.insert(0, dirY)    # flip Y
-    bulletSound.play()
+
 
 # remove a bullet fromthe list
 def RemoveBullet(i):

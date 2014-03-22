@@ -53,12 +53,15 @@ while (True):
                 pygame.quit()
                 sys.exit()
             if event.key == K_LEFT or event.key == ord('a'):
+                # start counter clock wise turn
                 turnCW = False
                 turnCCW = True
             if event.key == K_RIGHT or event.key == ord('d'):
+                # start clock wise turn
                 turnCCW = False
                 turnCW = True
             if event.key == K_UP or event.key == ord('w'):
+                # start ship moving
                 thruster = True
                 ship.engineSound.play(-1)
             if event.key == K_RETURN:
@@ -66,10 +69,13 @@ while (True):
 
         if event.type == KEYUP:
             if event.key == K_LEFT or event.key == ord('a'):
+                # stop counter clock wise turn
                 turnCCW = False
             if event.key == K_RIGHT or event.key == ord('d'):
+                # stop clock wise turn
                 turnCW = False
             if event.key == K_UP or event.key == ord('w'):
+                # stop ship moving
                 thruster = False
                 ship.engineSound.stop()
 
