@@ -1,13 +1,13 @@
-# This is the main code for the spacewar sample game.
+# This is the main code for the test sample game.
 __author__ = 'Mus'
 import pygame, sys
 from pygame.locals import *
 
 # bring in my code from other python files
-import space, ship, asteroid, bullet
+import ship, bullet, background
 
 # set up pygame
-pygame.mixer.pre_init(22050, -16, 2, 512)
+pygame.mixer.pre_init(22050, -16, 2, 512)   # init sound system
 pygame.init()
 
 # get the clock, so we can set the framerate later
@@ -17,7 +17,7 @@ mainClock = pygame.time.Clock()
 WINDOW_WIDTH = 500
 WINDOW_HEIGHT = 500
 windowSurface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), 0, 32)
-pygame.display.set_caption('Space War')
+pygame.display.set_caption('Test Game')
 
 # set up colors
 BLACK = (0, 0, 0)
@@ -37,8 +37,8 @@ thruster = False
 
 # set up other objects (sprites)
 ship.SetupShip(pygame)
-space.SetupSpace(pygame)
 bullet.SetupBullet(pygame)
+background.SetupBgnd(pygame)
 
 # run game loop
 while (True):
@@ -77,7 +77,7 @@ while (True):
     ship.TransformShip(windowSurface, turnCCW, turnCW, thruster)
 
     # draw background
-    space.DrawSpace(windowSurface)
+    background.DrawBgnd(windowSurface)
 
     # draw ship
     ship.DrawShip(windowSurface, pygame)
