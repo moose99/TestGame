@@ -68,7 +68,7 @@ while (True):
             if event.key == K_RETURN:
                 bullet.FireBullet(pygame, ship.shipPosX, ship.shipPosY, ship.shipRotation)
                 bullet.bulletSound.play()
-            if event.key == K_sS:
+            if event.key == K_s:
                 turbo = True
                 ship.engineSound.play(-1)
 

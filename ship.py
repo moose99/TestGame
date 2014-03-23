@@ -13,7 +13,7 @@ engineSound = None
 SHIP_WIDTH = 50
 SHIP_HEIGHT = 88
 SHIP_ROTATION_AMOUNT = 4
-SHIP_SPEED_AMOUNT = 1
+SHIP_SPEED_AMOUNT = 4
 
 # init vars to hold velocity, speed, position and rotation...
 shipRotation = 0    # goes from 0 to 360
