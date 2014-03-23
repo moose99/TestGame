@@ -34,6 +34,7 @@ basicFont = pygame.font.SysFont(None, FONT_SIZE)
 turnCCW = False
 turnCW = False
 thruster = False
+turbo = False
 
 # set up other objects (sprites)
 ship.SetupShip(pygame)
@@ -67,6 +68,10 @@ while (True):
             if event.key == K_RETURN:
                 bullet.FireBullet(pygame, ship.shipPosX, ship.shipPosY, ship.shipRotation)
                 bullet.bulletSound.play()
+            if event.key == K_sS:
+                turbo = True
+                ship.engineSound.play(-1)
+
 
         if event.type == KEYUP:
             if event.key == K_LEFT or event.key == ord('a'):
@@ -78,10 +83,15 @@ while (True):
             if event.key == K_UP or event.key == ord('w'):
                 # stop ship moving
                 thruster = False
+
+                ship.engineSound.stop()
+                #stop ship turbo mode
+            if event.key == K_s:
+                turbo = False
                 ship.engineSound.stop()
 
     # send motion variables to ship, so it can turn or move
-    ship.TransformShip(windowSurface, turnCCW, turnCW, thruster)
+    ship.TransformShip(windowSurface, turnCCW, turnCW, thruster, turbo)
 
     # draw background
     background.DrawBgnd(windowSurface)
