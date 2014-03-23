@@ -70,13 +70,14 @@ def MoveShip(surface, thruster, turbo):
         shipDirX = math.cos(math.radians(shipRotation))
         shipDirY = -math.sin(math.radians(shipRotation))    # flip Y
 
-        # increase velocity using current direction
-        shipVelX = shipDirX * SHIP_SPEED_AMOUNT
-        shipVelY = shipDirY * SHIP_SPEED_AMOUNT
+        if (turbo):
+            shipSpeed = SHIP_SPEED_AMOUNT * 2
+        else:
+            shipSpeed = SHIP_SPEED_AMOUNT
 
-        if turbo:
-            shipVelX = shipDirX * SHIP_SPEED_AMOUNT * 2
-            shipVelY = shipDirY * SHIP_SPEED_AMOUNT * 2
+        # increase velocity using current direction
+        shipVelX = shipDirX * shipSpeed
+        shipVelY = shipDirY * shipSpeed
 
     else:
         shipVelX = 0
@@ -87,8 +88,18 @@ def MoveShip(surface, thruster, turbo):
     shipPosY += shipVelY
 
     # wrap position if off screen
-    if (shipPosX >= surface.get_width()):
+    if (shipPosX > surface.get_width()):
         shipPosX -= surface.get_width()
+
+    if (shipPosX < 0):
+        shipPosX += surface.get_width()
+
+
+    if (shipPosY > surface.get_height()):
+        shipPosY -= surface.get_height()
+
+    if (shipPosY < 0):
+        shipPosY += surface.get_height()
 
 # handles moving and turning the ship
 def TransformShip(surface, turnCCW, turnCW, thruster, turbo):

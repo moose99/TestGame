@@ -26,7 +26,7 @@
       <file leaf-file-name="Main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="86" selection-start="1967" selection-end="1972" vertical-scroll-proportion="-5.9615383" vertical-offset="1069" max-vertical-offset="1972">
+            <state line="96" column="0" selection-start="2671" selection-end="2671" vertical-scroll-proportion="0.0" vertical-offset="1452" max-vertical-offset="1972">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="ship.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ship.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="24" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.52473116" vertical-offset="776" max-vertical-offset="1904">
+            <state line="100" column="20" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.5892473" vertical-offset="1426" max-vertical-offset="2091">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="background.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="41" selection-start="449" selection-end="451" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="408">
+            <state line="5" column="16" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -150,7 +150,7 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Main.py" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="SearchEverywhereHistory" value="&#10;thruster" />
+    <property name="SearchEverywhereHistory" value="wrap&#10;thruster" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -452,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/background.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="41" selection-start="449" selection-end="451" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bullet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="14" selection-start="1280" selection-end="1283" vertical-scroll-proportion="-5.9615383" vertical-offset="644" max-vertical-offset="1207">
@@ -466,16 +459,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/background.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="86" selection-start="1967" selection-end="1972" vertical-scroll-proportion="-5.9615383" vertical-offset="1069" max-vertical-offset="1972">
+        <state line="96" column="0" selection-start="2671" selection-end="2671" vertical-scroll-proportion="0.0" vertical-offset="1452" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ship.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="24" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.52473116" vertical-offset="776" max-vertical-offset="1904">
+        <state line="100" column="20" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.5892473" vertical-offset="1426" max-vertical-offset="2091">
           <folding />
         </state>
       </provider>
