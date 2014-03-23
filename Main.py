@@ -14,8 +14,8 @@ pygame.init()
 mainClock = pygame.time.Clock()
 
 # set up the window
-WINDOW_WIDTH = 500
-WINDOW_HEIGHT = 500
+WINDOW_WIDTH = 1440
+WINDOW_HEIGHT = 911
 windowSurface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), 0, 32)
 pygame.display.set_caption('Test Game')
 

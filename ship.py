@@ -10,8 +10,8 @@ shipImage = None
 engineSound = None
 
 # ship constant vars: size, rotation amount
-SHIP_WIDTH = 30
-SHIP_HEIGHT = 30
+SHIP_WIDTH = 50
+SHIP_HEIGHT = 88
 SHIP_ROTATION_AMOUNT = 4
 SHIP_SPEED_AMOUNT = 1
 
@@ -30,7 +30,7 @@ def SetupShip(game):
     global shipImage
     global engineSound
     shipRect = game.Rect(shipPosX-(SHIP_WIDTH/2), shipPosY-(SHIP_HEIGHT/2), SHIP_WIDTH, SHIP_HEIGHT)
-    shipImage = game.image.load('assets/rocketship.png')
+    shipImage = game.image.load('assets/red rocket.png')
     engineSound = game.mixer.Sound('assets/engine_2.wav')
 
 # draws the ship on the surface provided

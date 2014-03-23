@@ -10,10 +10,10 @@ def SetupBgnd(game):
     # use 'global' to indicate that we are changing the spaceRect/spaceImage vars declared outside the function
     global bgndRect
     global bgndImage
-    BGND_WIDTH = 1280
-    BGND_HEIGHT = 796
+    BGND_WIDTH = 1440
+    BGND_HEIGHT = 911
     bgndRect = game.Rect(0, 0, BGND_WIDTH, BGND_HEIGHT)
-    bgndImage = game.image.load('assets/B1_stars.png')
+    bgndImage = game.image.load('assets/milky-way.jpg')
 
 def DrawBgnd(surface):
     surface.blit(bgndImage, bgndRect)
