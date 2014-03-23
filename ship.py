@@ -54,6 +54,13 @@ def RotateShipCCW():
     if (shipRotation > 360):
         shipRotation = 360 - shipRotation
 
+def RotateShipCW():
+    global shipRotation
+    shipRotation -= SHIP_ROTATION_AMOUNT
+    # handle wrapping of rotation value
+    if (shipRotation < 0):
+        shipRotation = shipRotation + 360
+
 # change ship's velocity
 def MoveShip(surface, thruster, turbo):
     global shipVelX, shipVelY, shipPosX, shipPosY
@@ -88,6 +95,10 @@ def TransformShip(surface, turnCCW, turnCW, thruster, turbo):
     # handle rotation
     if (turnCCW):
         RotateShipCCW()
+    elif (turnCW):
+        RotateShipCW()
+
+
 
     # handle translation
     MoveShip(surface, thruster, turbo)
