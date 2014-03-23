@@ -6,6 +6,7 @@ from pygame.locals import *
 # bring in my code from other python files
 import ship, bullet, background
 
+
 # set up pygame
 pygame.mixer.pre_init(22050, -16, 2, 512)   # init sound system
 pygame.init()
@@ -18,6 +19,8 @@ WINDOW_WIDTH = 1440
 WINDOW_HEIGHT = 800
 windowSurface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT), 0, 32)
 pygame.display.set_caption('Test Game')
+print('The height is ' + str(WINDOW_HEIGHT) + '.')
+print('The width is ' + str(WINDOW_WIDTH) + '.')
 
 # set up colors
 BLACK = (0, 0, 0)
