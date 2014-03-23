@@ -66,6 +66,7 @@ while (True):
                 ship.engineSound.play(-1)
             if event.key == K_RETURN:
                 bullet.FireBullet(pygame, ship.shipPosX, ship.shipPosY, ship.shipRotation)
+                bullet.bulletSound.play()
 
         if event.type == KEYUP:
             if event.key == K_LEFT or event.key == ord('a'):
