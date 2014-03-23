@@ -58,24 +58,6 @@ def RotateShipCCW():
 def MoveShip(surface, thruster, turbo):
     global shipVelX, shipVelY, shipPosX, shipPosY
 
-     # double speed
-    if (turbo):
-        # find the current direction vector, using unit circle
-        shipDirX = math.cos(math.radians(shipRotation))
-        shipDirY = -math.sin(math.radians(shipRotation))    # flip Y
-
-        # increase velocity using current direction
-        shipVelX = shipDirX * SHIP_SPEED_AMOUNT * 2
-        shipVelY = shipDirY * SHIP_SPEED_AMOUNT * 2
-
-    else:
-        shipVelX = 0
-        shipVelY = 0
-
-   # update position based on current velocity
-    shipPosX += shipVelX
-    shipPosY += shipVelY
-
     if (thruster):
         # find the current direction vector, using unit circle
         shipDirX = math.cos(math.radians(shipRotation))
@@ -84,6 +66,10 @@ def MoveShip(surface, thruster, turbo):
         # increase velocity using current direction
         shipVelX = shipDirX * SHIP_SPEED_AMOUNT
         shipVelY = shipDirY * SHIP_SPEED_AMOUNT
+
+        if turbo:
+            shipVelX = shipDirX * SHIP_SPEED_AMOUNT * 2
+            shipVelY = shipDirY * SHIP_SPEED_AMOUNT * 2
 
     else:
         shipVelX = 0
