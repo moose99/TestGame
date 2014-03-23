@@ -72,7 +72,7 @@ while (True):
                 # stop counter clock wise turn
                 turnCCW = False
             if event.key == K_RIGHT or event.key == ord('d'):
-                # stop clock wise turn
+                # stop  clock wise turn
                 turnCW = False
             if event.key == K_UP or event.key == ord('w'):
                 # stop ship moving
