@@ -4,7 +4,7 @@ import pygame, sys
 from pygame.locals import *
 
 # bring in my code from other python files
-import ship, bullet, background, asteroid.py
+import ship, bullet, background, asteroid
 
 
 
