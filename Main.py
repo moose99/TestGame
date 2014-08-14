@@ -4,7 +4,8 @@ import pygame, sys
 from pygame.locals import *
 
 # bring in my code from other python files
-import ship, bullet, background
+import ship, bullet, background, asteroid.py
+
 
 
 # set up pygame
@@ -43,6 +44,7 @@ turbo = False
 ship.SetupShip(pygame)
 bullet.SetupBullet(pygame)
 background.SetupBgnd(pygame)
+asteroid.SetupAsteroid(pygame)
 
 # run game loop
 while (True):
@@ -107,6 +109,9 @@ while (True):
 
     # draw bullets
     bullet.DrawBullet(windowSurface)
+
+    #draw asteroid
+    asteroid.DrawAsteroid(windowSurface)
 
     # draw the window onto the screen
     pygame.display.update()
