@@ -74,7 +74,6 @@ while (True):
                 turbo = True
 
 
-
             if event.key == K_RETURN:
                 bullet.FireBullet(pygame, ship.shipPosX, ship.shipPosY, ship.shipRotation)
                 bullet.bulletSound.play()
@@ -95,7 +94,8 @@ while (True):
             if event.key == K_LSHIFT or K_RSHIFT:
                 turbo = False
 
-
+    # asteroid move
+    asteroid.Amove(windowSurface)
 
 
     # send motion variables to ship, so it can turn or move
